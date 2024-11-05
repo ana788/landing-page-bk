@@ -121,7 +121,8 @@ header{
             margin-top: 2.5rem;
             display: flex;
             align-items: center;
-            gap: 3.7rem;
+            //gap: 3.7rem;
+            justify-content: space-between;
             &:after{
                 content: "";
                 background: url('../assets/img/arrow-btn.svg') no-repeat center center;
@@ -158,6 +159,86 @@ header{
                 font-size: 1.6rem;
                 font-weight: 700;
                 text-transform: uppercase;
+            }
+        }
+    }
+    .right-container{
+        position: relative;
+        flex: 1;
+        max-width: 52.8rem;
+        height: 66.3rem;
+        background-color: var(--yellow);
+        border-radius: 0px 0px 12px 12px;
+        padding-top: 9.5rem;
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .images{
+            position: absolute; //permite que a div com a imagens possa sair do plano dos outros elementos. Para ser posicionado de forma mais personalizada.
+            //Elementos posicionados de forma absoluta são removidos do fluxo normal e podem sobrepor elementos.
+            /*
+            Quando um elemento tem position: absolute, ele será posicionado em relação ao seu elemento pai mais próximo 
+            que tenha position: relative, absolute, fixed, ou sticky (ou seja, diferente de static)
+            */
+            width: 68.416rem;
+            height: 49.237rem;
+            img{
+                position: absolute; //
+                &#refri{
+                    top: 2.5rem;
+                    left: 0;
+                    z-index: 1;
+                }
+                &#fritas{
+                    top: 0;
+                    right: 0;
+                    z-index: 1;
+                }
+                &#hamburguer{
+                    left: 5.2rem;
+                    bottom: 0;
+                    z-index: 2;
+                }
+                &#logo-bk{
+                    right: 6px;
+                    bottom: 10px;
+                    z-index: 3;
+                }
+            }
+        }
+        .offer{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #FFFFFF;
+            &::before{
+                content: "";
+                width: 8rem;
+                height: 1.4rem;
+                background: url('../assets/img/line-left.svg') center center no-repeat;
+            }
+            &::after{
+                content: "";
+                width: 8rem;
+                height: 1.4rem;
+                background: url('../assets/img/line-right.svg') center center no-repeat;
+            }
+            p{
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 23px;
+                text-align: left;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 1.6rem;
+                }
+                strong{
+                    margin-left: 0.5rem;
+                    font-weight: 700;
+                }
             }
         }
     }

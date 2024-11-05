@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -118,7 +119,7 @@ header nav ul li a span {
   margin-top: 2.5rem;
   display: flex;
   align-items: center;
-  gap: 3.7rem;
+  justify-content: space-between;
 }
 .s-hero .left-container .value:after {
   content: "";
@@ -156,4 +157,83 @@ header nav ul li a span {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase;
+}
+.s-hero .right-container {
+  position: relative;
+  flex: 1;
+  max-width: 52.8rem;
+  height: 66.3rem;
+  background-color: var(--yellow);
+  border-radius: 0px 0px 12px 12px;
+  padding-top: 9.5rem;
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.s-hero .right-container .images {
+  position: absolute;
+  /*
+  Quando um elemento tem position: absolute, ele será posicionado em relação ao seu elemento pai mais próximo 
+  que tenha position: relative, absolute, fixed, ou sticky (ou seja, diferente de static)
+  */
+  width: 68.416rem;
+  height: 49.237rem;
+}
+.s-hero .right-container .images img {
+  position: absolute;
+}
+.s-hero .right-container .images img#refri {
+  top: 2.5rem;
+  left: 0;
+  z-index: 1;
+}
+.s-hero .right-container .images img#fritas {
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.s-hero .right-container .images img#hamburguer {
+  left: 5.2rem;
+  bottom: 0;
+  z-index: 2;
+}
+.s-hero .right-container .images img#logo-bk {
+  right: 6px;
+  bottom: 10px;
+  z-index: 3;
+}
+.s-hero .right-container .offer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #FFFFFF;
+}
+.s-hero .right-container .offer::before {
+  content: "";
+  width: 8rem;
+  height: 1.4rem;
+  background: url("../assets/img/line-left.svg") center center no-repeat;
+}
+.s-hero .right-container .offer::after {
+  content: "";
+  width: 8rem;
+  height: 1.4rem;
+  background: url("../assets/img/line-right.svg") center center no-repeat;
+}
+.s-hero .right-container .offer p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 23px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.s-hero .right-container .offer p img {
+  margin-right: 1.6rem;
+}
+.s-hero .right-container .offer p strong {
+  margin-left: 0.5rem;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
