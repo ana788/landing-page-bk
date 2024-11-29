@@ -89,6 +89,7 @@ header nav ul li a span {
 .s-hero .container {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
 }
 .s-hero .left-container {
   padding-top: 12rem;
@@ -236,4 +237,59 @@ header nav ul li a span {
 .s-hero .right-container .offer p strong {
   margin-left: 0.5rem;
   font-weight: 700;
+}
+
+.s-offers {
+  width: 100%;
+  height: 20rem;
+  background: url("../assets/img/bg-login.png") no-repeat left center;
+  padding-top: 4.7rem;
+  padding-bottom: 3.2rem;
+}
+.s-offers .container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 6rem;
+}
+.s-offers .container .left-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4.1rem;
+  flex: 1;
+  max-width: 59.7rem;
+}
+.s-offers .container .left-container h3 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: left;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+.s-offers .container .left-container h2 {
+  font-family: Ubuntu;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: left;
+  color: var(--brown);
+}
+.s-offers .container button {
+  flex: 1;
+  background-color: var(--white);
+  max-width: 52.8rem;
+  height: 9.6rem;
+  border-radius: 1.2rem;
+  margin-top: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.9rem;
+}
+.s-offers .container button span {
+  font-family: Ubuntu;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #475993;
 }/*# sourceMappingURL=main.css.map */
